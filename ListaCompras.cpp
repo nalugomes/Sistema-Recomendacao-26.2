@@ -62,8 +62,7 @@ void carregarTodosArquivos(ModuloCompras* dados) {
     char caminho[150];
     cout << "Carregando arquivos, aguarde..." << endl;
 
-    // Carrega o cluster 0 (pode ajustar o intervalo se desejar carregar mais clusters, ex: i <= 20)
-    for (int i = 0; i <= 0; i++) { 
+    for (int i = 0; i <= 20; i++) {
         sprintf(caminho, "dados_venda_cluster_%d.csv", i);
         processarListaCompras(caminho, dados);
     }
